@@ -1,16 +1,8 @@
 <div>
   <h1>Upcoming Angular 2 Events</h1>
-  <hr>
-  <div>
-    <h2>{{event.name}}</h2>
-    <div>Date: {{event.date}}</div>
-    <div>Time: {{event.time}}</div>
-    <div>Price: ${{event.price}}</div>
-    <div>
-      <span>Location: {{event.location.address}}</span>
-      <span>&nbsp;</span>
-      <span>{{event.location.city}}, {{event.location.country}}</span>
+  <div fxLayout="row" fxLayoutWrap>
+    <div fxFlex="50" *ngFor="let event of events" class="event-card-container">
+      <event-thumbnail [event]="event"></event-thumbnail>
     </div>
   </div>
-  <hr>
 </div>
