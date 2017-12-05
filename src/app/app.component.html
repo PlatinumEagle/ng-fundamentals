@@ -1,3 +1,43 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<p>Welcome to {{ title }}!</p>
-<events-list></events-list>
+
+<!-- Top Nav -->
+<div fxFlexLayout="row">
+  <app-topnav></app-topnav>
+</div>
+
+<!-- Center Section -->
+<div fxFlexLayout="row">
+  <mat-sidenav-container>
+
+    <!-- Side Nav -->
+    <mat-sidenav mode="side" opened="true">
+      <mat-nav-list>
+        <mat-list-item>
+          <a href="">All Events</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a href="">Create Event</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <h2 matSubheader>Events</h2>
+        <mat-list-item>
+          <a href="">Angular Connect</a>
+        </mat-list-item>
+        <mat-list-item>
+          <a href="">ngConf</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Main content section -->
+    <mat-sidenav-content>
+      <events-list></events-list>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
+
+<!-- Footer -->
+<div fxFlexLayout="row" fxLayoutAlign="center">
+  Footer
+</div>

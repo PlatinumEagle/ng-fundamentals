@@ -3,8 +3,11 @@ import {
   MatAutocompleteModule,
   MatButtonModule,
   MatCardModule,
-  MatInputModule,
   MatFormFieldModule,
+  MatInputModule,
+  MatLineModule,
+  MatListModule,
+  MatSidenavModule,
   } from '@angular/material';
 // import 'hammerjs';  // for gesture support in @angular/material, imported in entry point (main.ts)
 
@@ -13,15 +16,21 @@ import {
   MatAutocompleteModule,
   MatButtonModule,
   MatCardModule,
-  MatInputModule,
   MatFormFieldModule,
+  MatInputModule,
+  MatLineModule,
+  MatListModule,
+  MatSidenavModule,
   ],
   exports: [
   MatAutocompleteModule,
   MatButtonModule,
   MatCardModule,
-  MatInputModule,
   MatFormFieldModule,
+  MatInputModule,
+  MatLineModule,
+  MatListModule,
+  MatSidenavModule,
   ]
 })
 export class NgMaterialModule { }
